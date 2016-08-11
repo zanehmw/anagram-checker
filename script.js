@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 $("#check").click(function(){
-  console.log("in jquery")
   var word1 = $("#word1").val();
   var word2 = $("#word2").val();
   checkAnagram(word1, word2);
@@ -18,7 +17,8 @@ $("#check").click(function(){
         }
         else{
           console.log("false")
-          $("#answerOne").html("Sorry, not an ANAGRAM")
+          $("#answerOne").html("Not an ANAGRAM")
+          return false;
         }
       }
       console.log("anagram")
@@ -27,6 +27,8 @@ $("#check").click(function(){
     }
     else{
       console.log("false")
+      $("#answerOne").html("Not an ANAGRAM")
+
     }
   }
 
