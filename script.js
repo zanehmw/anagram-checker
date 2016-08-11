@@ -18,7 +18,7 @@ $("#check").click(function(){
         }
         else{
           console.log("false")
-          return false;
+          $("#answerOne").html("Sorry, not an ANAGRAM")
         }
       }
       console.log("anagram")
@@ -29,5 +29,5 @@ $("#check").click(function(){
       console.log("false")
     }
   }
-  
+
 })
